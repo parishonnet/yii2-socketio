@@ -1,5 +1,5 @@
 {
-  "name": "yiicod/yii2-socketio",
+  "name": "parishonnet/yii2-socketio",
   "description": "The simple and powerful socketio for the Yii2 framework",
   "type": "yii2-extension",
   "license": "MIT",
@@ -11,14 +11,14 @@
     }
   ],
   "require": {
-    "yiisoft/yii2": "2.*",
+    "yiisoft/yii2": "~2.0.49",
     "yiicod/yii2-cron": "1.*",
     "yiicod/yii2-base": "1.*",
-    "symfony/process": "~3.0|~4.0",
-    "predis/predis": "~1.1.0"
+    "symfony/process": "~6.0",
+    "predis/predis": "~v2.2.2"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "~2.1"
+    "friendsofphp/php-cs-fixer": "~v3.57.1"
   },
   "repositories": [
     {
@@ -29,6 +29,11 @@
   "autoload": {
     "psr-4": {
       "yiicod\\socketio\\": "/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
     }
   }
 }
